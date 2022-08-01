@@ -1,0 +1,146 @@
+body{
+    background: rgba(46, 229, 157, 0.4);
+}
+.input {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 3px 3px 3px #ffffff,
+                -3px -3px 3px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+
+    
+   }
+
+   .k2 {
+    resize: none;
+    margin-top: 0px !important;
+   }
+   .k3 {
+    height: 40px;
+    width: 95%;
+    border-radius: 10px;
+   }
+   .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
+   .areaChat{
+    width: 40%;
+    height: auto;
+    background: #23c483;
+    border-radius: 15px;
+}
+section{
+    background: #e8e8e8;
+    border: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+section samp
+{
+    color: rgb(23, 120, 211);
+    font-weight: bold;
+    
+}
+.espacio{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/*Boton para enviar mensaje*/
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-left: 3%;
+    width: 95%;
+}
+   
+   button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+   }
+   
+   button:hover span {
+    transform: translateX(5em);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+  textarea
+  {
+    width: 94%;
+  }
+ a{
+    text-decoration: none;
+    color: #ffffff;
+}
+i{
+    color: rgb(28, 120, 241);
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
+}
+i:hover{
+    color: rgb(177, 19, 19);
+}
+
+.img{
+    width: 40%;
+}
+section img{
+    width: 20px ; 
+}
+   @media screen and (max-width: 740px) {
+    .areaChat{
+        width: 100%;
+    }
+
+    section img{
+        width: 2rem ; 
+    }
+    i{
+        font-size: 1.5rem;
+    }
+
+
+       }
